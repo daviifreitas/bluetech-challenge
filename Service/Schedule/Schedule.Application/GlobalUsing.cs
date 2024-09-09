@@ -1,0 +1,11 @@
+﻿global using BuildingBlocks.CQRS;
+global using FluentValidation;
+global using Schedule.Domain.Interfaces.Service;
+global using BuildingBlocks.Exceptions;
+global using Schedule.Application.Exceptions;
+global using Schedule.Application.Dto;
+global using System.Diagnostics.CodeAnalysis;
+global using System.Reflection;
+global using BuildingBlocks.Behaviors;
+global using Microsoft.Extensions.Configuration;
+global using Microsoft.Extensions.DependencyInjection;

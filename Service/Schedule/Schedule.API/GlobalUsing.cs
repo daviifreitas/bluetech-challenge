@@ -1,0 +1,13 @@
+﻿global using Carter;
+global using MediatR;
+global using Schedule.Application.Schedule.Query.GetScheduleById;
+global using Schedule.Application.Schedule.Command.CreateSchedule;
+global using Schedule.Application.Schedule.Command.UpdateSchedule;
+global using Schedule.API;
+global using Schedule.Application;
+global using HealthChecks.UI.Client;
+global using Microsoft.AspNetCore.Diagnostics.HealthChecks;
+global using Schedule.Application.Dto;
+global using Schedule.Application.Schedule.Query.GetSchedule;
+global using System.Diagnostics.CodeAnalysis;
+global using Microsoft.OpenApi.Models;

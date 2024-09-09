@@ -1,0 +1,9 @@
+services:
+  schedule.api:
+    image: ${DOCKER_REGISTRY-}scheduleapi
+    build:
+      context: .
+      dockerfile: Schedule.API/Dockerfile
+  
+  scheduledb:
+   image: mcr.microsoft.com/mssql/server

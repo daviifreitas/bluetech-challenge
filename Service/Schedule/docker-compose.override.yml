@@ -1,0 +1,23 @@
+services:
+  schedule.api:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_HTTP_PORTS=8080
+      - ASPNETCORE_HTTPS_PORTS=8081
+      - ConnectionStrings__DatabaseConnection=Server=schedule_db;Database=scheduleDb;User Id =sa;Password=SwN12345678;Encrypt=False;TrustServerCertificate=True
+    ports:
+      - "6010:8080"
+      - "6011:8081"
+    volumes:
+      - ${APPDATA}/Microsoft/UserSecrets:/home/app/.microsoft/usersecrets:ro
+      - ${APPDATA}/ASP.NET/Https:/home/app/.aspnet/https:ro
+    depends_on:
+      - scheduledb
+      
+  scheduledb:
+    container_name: schedule_db
+    ports:
+      - "1433:1433"
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=SwN12345678

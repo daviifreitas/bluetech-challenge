@@ -1,0 +1,27 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/front-end/node_modules
+/Service/Schedule/.idea/.idea.Schedule
+/Service/Schedule/.vs
+/Service/Schedule/bin/Debug
+/Service/Schedule/BuildingBlocks/bin/Debug/net8.0
+/Service/Schedule/BuildingBlocks/obj
+/Service/Schedule/obj
+/Service/Schedule/Schedule.API/bin/Debug/net8.0
+/Service/Schedule/Schedule.API/obj
+/Service/Schedule/Schedule.API/Schedule.API.csproj.user
+/Service/Schedule/Schedule.Application/bin/Debug/net8.0
+/Service/Schedule/Schedule.Application/obj
+/Service/Schedule/Schedule.Domain/bin/Debug/net8.0
+/Service/Schedule/Schedule.Domain/obj
+/Service/Schedule/Schedule.Infra.Data/bin/Debug/net8.0
+/Service/Schedule/Schedule.Infra.Data/obj/Debug/net8.0
+/Service/Schedule/Schedule.Infra.Data/obj
+/Service/Schedule/Schedule.Infra.IoC/obj
+/Service/Schedule/Schedule.Test/bin/Debug/net8.0
+/Service/Schedule/Schedule.Test/obj
+*.user
+/front-end/.vscode
