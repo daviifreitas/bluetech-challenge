@@ -1,6 +1,4 @@
-﻿using System.Runtime.InteropServices.JavaScript;
-
-namespace Schedule.Application.Schedule.Command.CreateSchedule;
+﻿namespace Schedule.Application.Schedule.Command.CreateSchedule;
 
 public record CreateScheduleCommand(string Name,string PhoneNumber, string Email)
     : ICommand<CreateScheduleResult>

@@ -1,6 +1,6 @@
 ﻿namespace Schedule.Application.Schedule.Command.DeleteSchedule;
 
-public class DeleteScheduleHandler(IScheduleService service) : ICommandHandler<DeleteScheduleCommand,DeleteScheduleResult>
+public class DeleteScheduleCommandHandler(IScheduleService service) : ICommandHandler<DeleteScheduleCommand,DeleteScheduleResult>
 {
     public async Task<DeleteScheduleResult> Handle(DeleteScheduleCommand request, CancellationToken cancellationToken)
     {

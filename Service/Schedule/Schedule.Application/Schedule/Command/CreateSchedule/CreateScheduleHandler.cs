@@ -5,7 +5,11 @@ public class CreateSchedulerCommandHandler(IScheduleService scheduleService) : I
     public async Task<CreateScheduleResult> Handle(CreateScheduleCommand request, CancellationToken cancellationToken)
     {
         Domain.Entities.Schedule scheduleForCreate = request;
-        await scheduleService.CreateAsync(scheduleForCreate);
+        var isCreated = await scheduleService.CreateAsync(scheduleForCreate);
+        
+        if(!isCreated)
+            throw new BadRequestException("Schedule not created");
+        
         return new CreateScheduleResult(scheduleForCreate.Id);
     }
 }
