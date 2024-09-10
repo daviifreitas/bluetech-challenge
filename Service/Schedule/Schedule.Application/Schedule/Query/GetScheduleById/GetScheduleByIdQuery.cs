@@ -8,6 +8,6 @@ public class GetScheduleByIdQueryValidator : AbstractValidator<GetScheduleByIdQu
 {
     public GetScheduleByIdQueryValidator()
     {
-        RuleFor(x => x.Id).NotEmpty();
+        RuleFor(x => x.Id).NotEmpty().WithMessage("Id is required.");
     }
 }

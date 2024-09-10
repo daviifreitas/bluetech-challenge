@@ -1,6 +1,6 @@
 ﻿namespace Schedule.Application.Schedule.Query.GetScheduleById;
 
-public class GetScheduleByIdHandler(IScheduleService scheduleService)
+public class GetScheduleByIdQueryHandler(IScheduleService scheduleService)
     : IQueryHandler<GetScheduleByIdQuery, GetScheduleByIdResult>
 {
     public async Task<GetScheduleByIdResult> Handle(GetScheduleByIdQuery request, CancellationToken cancellationToken)

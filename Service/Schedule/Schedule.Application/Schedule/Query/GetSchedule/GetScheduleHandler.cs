@@ -2,7 +2,7 @@
 
 namespace Schedule.Application.Schedule.Query.GetSchedule;
 
-public class GetScheduleHandler(IScheduleService scheduleService) : IQueryHandler<GetScheduleQuery, GetScheduleResult>
+public class GetScheduleQueryHandler(IScheduleService scheduleService) : IQueryHandler<GetScheduleQuery, GetScheduleResult>
 {
     public async Task<GetScheduleResult> Handle(GetScheduleQuery request, CancellationToken cancellationToken)
     {
