@@ -116,9 +116,9 @@ async function createSchedule() {
           </div>
         </template>
 
-        <Column field="name" header="Nome" sortable style="min-width: 12rem"></Column>
-        <Column field="phoneNumber" header="Telefone" sortable style="min-width: 16rem"></Column>
-        <Column field="email" header="Email" sortable style="min-width: 16rem"></Column>
+        <Column field="name" header="Nome"  style="min-width: 12rem"></Column>
+        <Column field="phoneNumber" header="Telefone"  style="min-width: 16rem"></Column>
+        <Column field="email" header="Email"  style="min-width: 16rem"></Column>
         <Column :exportable="false" style="min-width: 12rem">
           <template #body="slotProps">
             <Button icon="pi pi-pencil" outlined rounded class="mr-2" @click="editSchedule(slotProps.data)"/>

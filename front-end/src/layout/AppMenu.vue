@@ -6,7 +6,7 @@ import AppMenuItem from './AppMenuItem.vue';
 const model = ref([
     {
         label: 'Home',
-        items: [{ label: 'Agendamentos', icon: 'pi-calendar', to: '/agendamento' }]
+        items: [{ label: 'Agendamentos', icon: 'pi pi-calendar', to: '/agendamento' }]
     }
 ]);
 </script>
